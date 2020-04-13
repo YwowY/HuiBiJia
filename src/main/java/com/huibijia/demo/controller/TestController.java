@@ -14,15 +14,6 @@ public class TestController {
 
         String tmallUrl = "https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.8.27832a99AfoD5W&id=604433373792&skuId=4233630160968&user_id=1776477331&cat_id=2&is_b=1&rn=2eff85a6a504024ee62222a0045d9ded";
         UrlData tmall = analyseUrl(tmallUrl);
-//        System.out.println("tmall = " + tmall);
-//
-//        String taobaoUrl = "https://s.taobao.com/search?spm=a230r.1.14.7.ade0695abTrJ6k&type=samestyle&app=i2i&rec_type=1&uniqpid=69915374&nid=604733501729";
-//        UrlData taobao = analyseUrl(taobaoUrl);
-//        System.out.println("taobao = " + taobao);
-//
-//        String jdUrl = "https://item.jd.com/100004250098.html#none";
-//        UrlData jd = analyseUrl(jdUrl);
-//        System.out.println("jd = " + jd);
 
 //        通过网站链接查看历史价格
         Product p = (Product) soupTmallDetailById(tmall.getNumber());
